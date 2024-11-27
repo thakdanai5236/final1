@@ -1,0 +1,227 @@
+/*
+ * Application-wide styles
+ * Organized for readability and maintainability
+ */
+
+/* General Styles */
+body {
+  background-color: #f8f9fa; /* Light background */
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn {
+  display: block;
+  margin: 20px auto;
+}
+
+/* Navbar */
+.navbar {
+  margin-bottom: 20px;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.navbar .form-control {
+  max-width: 300px;
+}
+
+/* Logo and Links */
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-link {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #f50057;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #c51162;
+  transform: scale(1.05);
+}
+
+.btn-outline-primary {
+  font-weight: bold;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+}
+
+/* Footer */
+footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 20px 0;
+}
+
+footer h5 {
+  margin-bottom: 20px;
+}
+
+footer ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+footer ul li {
+  margin: 0 10px;
+}
+
+footer ul li a {
+  color: #adb5bd;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Card */
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+/* Post Card */
+.post-card {
+  position: relative;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.post-card .post-header {
+  position: relative;
+}
+
+.post-card .post-body {
+  margin-top: 20px;
+}
+
+/* Dropdown */
+.dropdown {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.dropdown-button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.dropdown-menu .dropdown-item {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background: #f0f0f0;
+}
+
+/* Tables */
+.table th {
+  text-align: left;
+  width: 30%;
+  color: #6c757d;
+}
+
+.table td {
+  font-size: 1rem;
+}
+
+/* Search Bar */
+.search-bar {
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar .form-control {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+  .post-card {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+  .dropdown {
+    top: 5px;
+    right: 5px;
+  }
+}
